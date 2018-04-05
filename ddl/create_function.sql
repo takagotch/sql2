@@ -1,0 +1,23 @@
+CREATE FUNCTION func (INTEGER) RETURNS VARCHAR AS $$ 
+DECLARE
+  result VARCHAR;
+BEGIN
+  SELECT MAX(a) INTO result FROM bar WHERE a = $1;
+  IF result IS NOT NULL THEN
+    RETURN 'Found';
+  ELSE
+    RETURN 'Not Found';
+  END IF;
+END$$ LANGUAGE 'plpgsql'
+
+//psql
+CREATE FUNCTION f_sql(INTEGER) RETURNS INTEGER AS '
+  SELECT MAX(a) FROM foo WHERE b = $1;
+' LANGUAGE 'sql'
+
+SELECT * FROM foo WHERE func(a) = 'Found'
+
+
+//DROP FUNCTION
+
+
