@@ -1,0 +1,7 @@
+//LIKE, UPPER
+
+SELECT a FROM foo WHERE a ILIKE 'a%'
+
+SELECT a FROM foo WHERE LOWER(a) LIKE 'a%'
+
+
