@@ -1,0 +1,4 @@
+SELECT x,SUM(i) FROM foo GROUP BY x HAVING SUM(i) > 100
+
+
+
