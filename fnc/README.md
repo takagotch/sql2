@@ -75,7 +75,8 @@ REGER_INTERCEPT
 REGER_R2
 SUM() OVER()
 
-###
+### XML
+XMLAGG
 
 ###
 
