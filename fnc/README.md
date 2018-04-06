@@ -16,5 +16,31 @@ DATE_ADD
 DATE_PART
 
 
+### 
+CAST
+COALESCE
+CONVERT
+DECODE
+ISNULL
+NULLIF
+NVL
+TO_CHAR
+TO_DATE
+TO_NUMBER
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
 
 
