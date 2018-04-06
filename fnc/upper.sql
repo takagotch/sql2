@@ -1,0 +1,6 @@
+//LOWER
+
+SELECT a,UPPER(a) FROM foo
+
+
+
