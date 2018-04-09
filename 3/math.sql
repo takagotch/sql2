@@ -1,0 +1,15 @@
+//ADD_MONTHS
+//DATEADD
+
+SELECT * FROM foo WHERE a + b = 10
+
+SELECT SYSDATE + 7 FROM NULL
+
+//
+
+
+//
+
+//
+
+

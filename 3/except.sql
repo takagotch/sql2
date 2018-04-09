@@ -1,0 +1,9 @@
+//UNION
+//MINUS
+
+SELECT a FROM foo EXCEPT SELECT a FROM bar
+
+SELECT a FROM bar EXCEPT SELECT a FROM foo
+
+
+

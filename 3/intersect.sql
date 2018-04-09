@@ -1,0 +1,6 @@
+//UNION
+//EXCEPT
+
+SELECT a FROM foo INTERSECT SELECT a FROM bar
+
+
