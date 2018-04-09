@@ -1,0 +1,18 @@
+CREATE PROCEDURE test_handler() LANGUAGE SQL
+BEGIN
+  DECLARE i INTEGER;
+  DECLARE flg INTEGER DEFAULT 1;
+  DECLARE cur CURSOR FOR SELECT a FROM foo;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET
+    flg = 0;
+  OPEN cur;
+  fetch_loop: LOOP
+    FETCH cur INTO i;
+    IP flg = 0 THEN LEAVE fetch_loop; END IF;
+  END LOOP;
+  CLOSE cur;
+END
+
+
+
+
