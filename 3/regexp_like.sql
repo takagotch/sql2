@@ -1,0 +1,7 @@
+//REGEXP_COUNT
+
+SELECT a FROM foo WHERE REGEXP_LIKE(a, '^A.*', 'i')
+
+SELECT a FROM foo WHERE REGEXP_LIKE(a, '^[0-9].*')
+
+
