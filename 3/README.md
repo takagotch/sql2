@@ -71,6 +71,10 @@ REGEXP_LIKE
 SOME
 
 ###
++
+-
+IS NULL
+
 
 
 
