@@ -1,0 +1,5 @@
+//UNLOCK TABLES
+
+LOCK TABLES foo READ
+
+
