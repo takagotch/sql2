@@ -1,0 +1,4 @@
+
+IMPORT FROM foo.txt OF DEL INSERT INTO foo
+
+
