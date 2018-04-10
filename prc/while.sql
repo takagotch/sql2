@@ -1,4 +1,6 @@
-//
+//BREAK
+//LEAVE
+
 //oracle
 DECLARE
   i NUMBER;
