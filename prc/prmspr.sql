@@ -11,11 +11,74 @@ BEGIN
 END;
 
 
+CREATE PROCEDURE p_foo(a IN NUMBER,b OUT NUMBER) IS
+BEGIN
+  b := a * 2;
+END
 
+
+BEGIN
+  p_foo;
+END;
+
+
+DECLARE
+  result NUMBER;
+BEGIN
+  p_foo(1,result);
+END;
+
+DECLARE
+  result NUMBER;
+BEGIN
+  p_foo(b=>result, a=>1);
+END;
+
+
+CREATE PROCESURE p_foo(a IN NUMBER DEFAULT 0,
+  b OUT NUMBER) IS
+BEGIN
+  b := a * 2;
+END;
 
 
 
 //sql
+CREATE PROCEDURE p_foo(@a int,@b int) AS
+BEGIN
+  IF @a = 1
+    INSERT INTO foo VALUES(@b)
+  ELSE
+    INSERT INTO foo VALUES(@a)
+END
+
+
+CREATE PROCEDURE p_foo(@a int, @b int OUTPUT) AS
+BEGIN
+  SELECT @b = MAX(i) FROM foo WHERE j = @a
+END
+
+
+EXECUTE p_foo 1,2
+
+DECLARE @result int
+EXECUTE p_foo 1,@result OUTPUT
+
+CEREATE PROCEDURE p_foo(@a int, @b int = 0) AS
+BEGIN
+  INSERT INTO foo VALUES(@a, @b);
+END
+
+EXECUTE p_foo 1
+
+
+CREATE PROCEDURE p_foo(@a int = 0, @b int) AS
+BEGIN
+  INSERT INTO foo VALUES(@a, @b);
+END
+
+EXECUTE p_foo DEFAULT,1
+EXECUTE p_foo @b = 1
 
 
 
