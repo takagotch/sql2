@@ -1,3 +1,5 @@
+//CREATE FUNCTION
+
 //oracle
 CREATE FUNCTION f_foo(a IN NUMBER,b IN NUMBER)
   RETURN NUMBER IS
@@ -43,5 +45,25 @@ BEGIN
 END;$$ LANGUAGE 'plpgsql';
 
 
+CREATE FUNCTION f_foo(arg1 INTEGER, arg2 INTEGER)
+  RETURN INTEGER AS $$
+BEGIN
+  RAISE NOTICE 'arg1=% arg2=%', arg1, arg2;
+  RETURN $1;
+END;$$ LANGUAGE 'plpgsql';
+
+
+CREATE FUNCTION f_foo(arg1 INTEGER, arg2 OUT INTEGER)
+  AS $$
+BEGIN
+  arg2 := arg1;
+END;
+$$ LANGUAGE 'plpgsql';
+
+SELECT * FROM f_foo(1);
+
+arg2
+------
+    1
 
 
