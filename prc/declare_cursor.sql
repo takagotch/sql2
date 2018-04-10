@@ -1,5 +1,15 @@
 //FOR
 
+//oracle
+DECLARE
+  CURSOR cursor_name IS SELECT a FROM foo;
+BEGIN
+END;
+
+//sql
+DECLARE cursor_name CURSOR FOR SELECT a FROM foo
+
+
 //mysql
 CREATE PROCEDURE test_cursor() LANGUAGE SQL
 BEGIN
@@ -15,5 +25,6 @@ BEGIN
 END;
 $$ LANGUAGE 'plpgsql';
 
+---
 
 
