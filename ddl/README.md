@@ -4,17 +4,51 @@ ALTER XXX
 
 CREATE OR REPLACE VIEW #NO ERR
 
-#psgl
+//psgl
 DROP IF EXISTS
 
-#mysql
+//mysql
 CREATE TABLE IF NOT EXISTS foo
 DROP TABLE IF EXISTS foo
 
 DROP TABLE IF EXSISTS foo
 CREATE TABLE foo ( ... )
 
+### CREATE TABLE
 
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
+###
 
 ### CREATE TABLE
 ### CREATE TABLE AS
