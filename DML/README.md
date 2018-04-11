@@ -1,6 +1,29 @@
-//SELECT, INSERT, UPDATE, DELETE
-SELECT query
-       subquery
+
+
+## SELECT, INSERT, UPDATE, DELETE
+
+## SELECT query subquery
+
+### SELECT
+### SELECT
+### FROM
+### WHERE
+### GROUP BY
+### GROUPING SETS ROLLUP CUBE
+### HAVING
+### ORDER BY
+### subquery
+### WITH
+### WITH
+### LIMIT
+### OFFSET FETCH
+### SELECT INTO
+### UNION
+### INSERT
+### UPDATE
+### DELETE
+### MERGE
+### REPLACE
 
 
 
