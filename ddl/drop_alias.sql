@@ -4,4 +4,8 @@ DROP ALIAS a_foo
 
 DROP ALIAS DB2ADMIN.a_foo
 
+---
+
+
+
 

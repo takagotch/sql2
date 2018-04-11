@@ -1,0 +1,7 @@
+//CREATE PACKAGE
+
+DROP PACKAGE mypack
+
+DROP PACKAGE BODY mypack
+
+

@@ -1,3 +1,4 @@
+//DROP TRIGGER
 //CREATE TRIGGER
 
 DROP TRIGGER trg_insert_foo

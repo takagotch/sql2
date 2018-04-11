@@ -1,0 +1,7 @@
+//DROP SYNONYM
+
+CREATE SYNONYM syn_foo FOR foo
+
+CREATE PUBLIC SYNONYM fyn_foo FOR foo
+
+

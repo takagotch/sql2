@@ -1,8 +1,13 @@
+//DROP SEQUENCE
 //CREATE SEQUENCE
 
 DROP SEQUENCE s_foo
 
 //db2
 DROP SEQUENCE s_foo RESTRICT
+
+---
+
+
 
 

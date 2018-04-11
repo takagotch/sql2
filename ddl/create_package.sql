@@ -1,0 +1,15 @@
+//DROP PACKAGE
+
+CREATE PACKAGE mypack AS
+  var1 NUMBER;
+  var2 VARCHAR2(20);
+  FUNCTION get_var1 RETURN NUMBER;
+  FUNCTION get_var2 RETURN VARCHAR2;
+  PROCEDURE initialize;
+END;
+
+
+SELECT mypack.get_var1() FROM DUAL
+
+
+
