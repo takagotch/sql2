@@ -12,5 +12,8 @@ CLUSTER foo USING idx_foo
 CLUSTER idx_foo ON foo
 
 
+---
+
+
 
 
