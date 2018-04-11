@@ -1,0 +1,7 @@
+//CREATE SYNONYM
+
+DROP SYNONYM syn_foo
+
+DROP PUBLIC SYNONYM syn_foo
+
+
