@@ -6,20 +6,57 @@ INSERT INTO foo VALUES(1,2, 'ABC')
 //INSERT COLUMN
 INSERT INTO foo(a,b,c) VALUES(1, 2, 'ABC')
 
-//
+//INSERT DEFAULT INTEGER
 INSERT INTO foo(a,b,c) VALUES(1, 2, DEFAULT)
 
+//SELET INSERT
 INSERT INTO foo(a,b,c) SELECT a,b,c FROM bar
 
+//MULTI ROW INSERT
 INSERT INTO foo VALUES(1, 2, 'abc'),(2, 20, 'xyz')
 
-//psgl
+
+
+//ON DUPLICATE KEY UPDATE mysql
+INSERT INTO foo VALUES(1, 'one')
+  ON DUPLICATE KEY UPDATE b = 'one'
+//ON DUPLICATE KEY UPDATE sqlite
+INSERT OR REPLACE INTO foo VALUES (1, 'one')
+
+
+//psgl RETURNING,OUTPUT
 INSERT INTO foo VALUES(1, 'one') RETURNING a, b
 INSERT INTO foo VALUES(1, 'one') RETURNING a, b INTO va, vb
 
 //mysql
 INSERT INTO foo VALUES(1, 'one')
   ON DUPLICATE KEY UPDATE b = 'one'
+
+//oracle INSERT ALL
+INSERT ALL INTO foo VALUES(1,2) INTO foo VALUES(3,4)
+  SELECT * FROM DUAL
+
+INSERT ALL
+  WHEN a < 10000 THEN
+    INTO bar1
+  ELSE
+    INTO bar2
+  SELECT a, b FROM foo
+
+//sql OUTPUT
+DECLARE @table_var table(a integer, b varchar(20))
+  INSERT INTO foo OUTPUT INSERTED.a, INSERTED.b
+    INTO @table_var VALUES(1, 'one')
+
+-------
+
+
+
+
+
+
+
+
 
 
 
