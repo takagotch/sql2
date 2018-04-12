@@ -1,20 +1,20 @@
-SELECT 
-COUNT(*) 
-FROM goo 
-GROUP BY a
+//GROUP BY
 
 
-SELECT name,
-COUNT(*) 
-FROM results 
-GROUP BY name
+SELECT COUNT(*) FROM goo GROUP BY a
 
-//mysql
-SELECT a,
-SUM(b) 
-FROM foo 
-GROUP BY a 
-DESC
+
+//COUNT MIN MAX AVG SUM
+SELECT name,COUNT(*) FROM results GROUP BY name
+
+
+//mysql ORDER BY
+SELECT a, SUM(b) FROM foo GROUP BY a DESC
+
+----
+
+
+
 
 
 
