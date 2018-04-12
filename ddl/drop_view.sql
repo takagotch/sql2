@@ -1,7 +1,12 @@
+//DROP VIEW
 //CREATE VIEW
 
 
 DROP VIEW v_foo
+
+//oracle
+//DROP TABLE 
+//DROP MATERIALIZED VIEW
 
 ---
 

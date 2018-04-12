@@ -1,10 +1,17 @@
 //DROP PROCEDURE
 //CREATE PROCEDURE
 
+//mysql
 DROP PROCEDURE p_foo
 
-DROP PROCEDURE p_foo
 
+//db2
+DROP PROCEDURE p_foo
 DROP PROCEDURE p_foo(INTEGER)
+
+
+----
+
+
 
 

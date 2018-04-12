@@ -1,4 +1,7 @@
+//CLUSTER
 //CREATE INDEX
+
+//psgl
 
 CREATE TABLE foo (
   a INTEGER,

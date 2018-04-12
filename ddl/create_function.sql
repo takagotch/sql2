@@ -1,3 +1,4 @@
+//CREATE FUNCTION
 //DROP FUNCTION
 
 //oracle
@@ -19,7 +20,7 @@ SELECT * FROM foo WHERE func(a) = 'Found'
 
 
 
-//sql
+//sql CREATE FUNCTION
 CREATE FUNCTION func (@aa int) RETURNS varchar(10) AS
 BEGIN
   DECLARE @result int
@@ -44,7 +45,7 @@ SELECT * FROM foo WHERE func(a) = 'zero'
 
 
 
-//psql
+//psql plpgsql createlang
 CREATE FUNCTION func(INTEGER) RETURNS VARCHAR AS $$
 DECLARE
   result VARCHAR;

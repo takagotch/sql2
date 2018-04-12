@@ -8,4 +8,8 @@ DROP FUNCTION f_foo(INTEGER)
 DROP FUNCTION f_foo()
 
 
+----
+
+
+
 
