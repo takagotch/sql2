@@ -1,0 +1,12 @@
+//LIMIT
+
+SELECT * FROM foo LIMIT 3
+
+//mysql psgl
+SELECT * FROM foo LIMIT 3 OFFSET 5
+SELECT * FROM foo 5, 3
+
+SELECT * FROM foo ORDER BY a LIMIT 3
+
+
+

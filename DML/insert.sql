@@ -1,7 +1,12 @@
+//INSERT
+
+//INSERT VALUES
 INSERT INTO foo VALUES(1,2, 'ABC')
 
+//INSERT COLUMN
 INSERT INTO foo(a,b,c) VALUES(1, 2, 'ABC')
 
+//
 INSERT INTO foo(a,b,c) VALUES(1, 2, DEFAULT)
 
 INSERT INTO foo(a,b,c) SELECT a,b,c FROM bar
