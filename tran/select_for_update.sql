@@ -1,17 +1,32 @@
+//SELECT FOR UPDATE
+
+//SELECT FOR UPDATE FOR UPDATE
 SELECT * FROM foo WHERE a = 1 FOR UPDATE
 
+
+//oracle FOR UPDATE OF, NOWAIT
 SELECT * FROM foo, bar WHERE foo.a = bar.a
   AND bar.b = 'abc' FOR UPDATE OF foo.a
-
+//NOWAIT oracle
 SELECT * FROM foo WHERE a = 1 FOR UPDATE NOWAIT
-
-
+//db2 FOR UPDATE
 SELECT * FROM foo WHERE a = 1 FOR UPDATE WITH RS
 
+
+
+//psgl FRO UPDATE OF
 SELECT * FROM foo INNER JOIN bar ON foo.a = bar.a
   WHERE bar.b = 'abc' FOR UPDATE OF foo
 
-
+//mysql FOR UPDATE
 SELECT * FROM foo WHERE a = 1 FOR UPDATE
+
+
+----
+
+
+
+
+
 
 

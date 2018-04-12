@@ -1,11 +1,26 @@
+//SAVEPOINT
 //COMMIT
 //ROLLBACK
 
+//oracle
 INSERT INTO foo VALUES(1,'abc');
 SAVEPOINT A;
 UPDATE foo SET b = 'xyz' WHERE a = 1;
 ROLLBACK TO SAVEPOINT A;
 COMMIT;
+
+
+//db2
+ON ROLLBACK RETURN CURSORS
+
+
+
+----
+
+
+
+
+
 
 
 

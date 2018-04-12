@@ -1,15 +1,47 @@
+//BEGIN
 //COMMIT
 //ROLLBACK
 
+//sql
 BEGIN TRAN A
 INSERT INTO foo VALUES(1,2,3)
 BEGIN TARN B
 INSERT INTO bar VALUES(1,2,3)
 COMMIT TRAN B
 COMMIT TRAN A
-
-
+//sqlite
 BEGIN EXCLUSIVE TRANSACTION
+
+
+
+BEGIN
+START TRANSACTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
 
 
 

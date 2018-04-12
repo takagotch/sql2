@@ -1,5 +1,19 @@
+//LOCK TABLES
 //UNLOCK TABLES
+//mysql
 
 LOCK TABLES foo READ
+
+READ
+READLOCAL
+WRITE
+LOW_PRIORITY WRITE
+
+
+----
+
+
+
+
 
 
