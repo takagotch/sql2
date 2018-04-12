@@ -1,3 +1,6 @@
+//UPDATE
+
+
 UPDATE foo SET a = 1
 
 UPDATE foo SET a = 1 WHERE b = 2
