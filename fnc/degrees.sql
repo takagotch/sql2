@@ -1,0 +1,10 @@
+//DEGREES
+//PI
+//RADANS
+
+SELECT a,DEGREES(a) FROM foo
+
+
+---
+
+

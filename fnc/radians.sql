@@ -1,0 +1,9 @@
+//RADIANS
+//DEGREES
+//PI
+
+SELECT a,RADIANS(a) FROM foo
+
+---
+
+

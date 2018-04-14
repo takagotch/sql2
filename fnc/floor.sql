@@ -1,0 +1,10 @@
+//FLOOR
+//CEIL
+//CEILING
+//ROUND
+
+SELECT a,FLOOR(a) FROM foo
+
+---
+
+

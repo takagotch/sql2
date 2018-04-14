@@ -1,0 +1,9 @@
+//PI
+//DEGREES
+//RADIANS
+
+SELECT PI()
+
+---
+
+

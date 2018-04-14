@@ -1,0 +1,6 @@
+//SQRT
+//SQUARE
+
+SELECT a,SQRT(a) FROM foo
+
+

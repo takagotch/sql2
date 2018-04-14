@@ -1,0 +1,19 @@
+//ROUND
+//CEIL
+//CEILING
+//FLOOR
+//TRUNC
+
+//sql
+SELECT a,ROUND(a,0) FROM foo
+SELECT a,ROUND(a,1) FROM foo
+//oracle
+SELECT a,ROUND(a,2) FROM foo
+SELECT TO_CHAR(a,'YY-MM-DD HH24:MI'),ROUND(a) FROM foo
+SELECT TO_CHAR(a,'YY-MM-DD HH24:MI'),
+  TO_CHAR(ROUND(a,'HH'), 'YY-MM-DD HH24:MI') FROM foo
+
+//psgl,mysql
+SELECT a,ROUND(a,2) FROM foo
+
+---
