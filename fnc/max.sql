@@ -1,4 +1,6 @@
+//MAX
 //MIN, GEATEST
+
 
 SELECT MAX(age) FROM addrlist
 

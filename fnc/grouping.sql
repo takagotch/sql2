@@ -10,3 +10,4 @@ SELECT sex,SUM(age),GROUPING(sex)
   FROM addrlist GROUP BY sex WITH ROLLUP
 
 
+

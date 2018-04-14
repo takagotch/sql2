@@ -1,5 +1,7 @@
-//STDDEV, STDEV
+//STDDEV                psgl,oracle,mysql
+//STDEV                 sql,acess
 //STDDEV_POP, STDEVP
+
 
 SELECT STDDEV(age) FROM addrlist
 

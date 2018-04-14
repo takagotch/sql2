@@ -4,7 +4,7 @@
 
 SELECT COUNT(*) FROM addrlist
 
-//except NULL
+//NULL except
 SELECT COUNT(age) FROM addrlist
 
 //DISTINCT only

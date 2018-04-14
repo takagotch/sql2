@@ -1,3 +1,4 @@
+//MIN
 //MAX, LEAST
 
 SELECT MIN(age) FROM addrlist
