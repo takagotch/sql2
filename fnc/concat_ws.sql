@@ -1,4 +1,5 @@
-//
+//CONCAT_WS
+//psgl,mysql
 
 SELECT CONCAT_WS('+', 'ABC', 'XYZ')
 
