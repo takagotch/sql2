@@ -166,6 +166,19 @@ EXTRACT, nodes
 EXTRACTVALUE, value, XPATH
 UPDATEXML, modify
 
+
+smpl.xml
+<root>
+<foo attr="1">
+  <bar>text1</bar>
+  <bar>text2</bar>
+</foo>
+<foo attr="2">
+  <bar>text3</bar>
+  <bar>text4</bar>
+</foo>
+</root>
+
 ###
 ###
 ###
