@@ -1,0 +1,15 @@
+//CUME_DIST
+//DENSE_RANK
+//PERSENT_RANK
+
+//CUME_DIST PERCENT_RANK PARTITION BY
+SELECT income, CUME_DIST() OVER(ORDER BY income)
+  FROM staff WHERE sex = 'female'
+
+
+
+
+---
+
+
+

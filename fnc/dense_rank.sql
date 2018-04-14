@@ -1,0 +1,29 @@
+//DENSE_RANK
+//RANK
+
+
+
+//DENSE_RANK OVER ORDER BY
+DENSE_RANK() OVER(ORDER BY result DESC)
+
+
+//DESC ASC
+//PARTITION BY ORDER BY
+SELECT income, DENSE_RANK() OVER(ORDER BY income DESC)
+  FROM staff ORDER BY income DESC
+
+SELECT income, sex, DENSE_RANK() OVER(PARTITION BY sex
+  ORDER BY income DESC)
+  FROM staff ORDER BY sex, income DESC
+
+SELECT SUM(income), DENSE_RANK()
+  OVER(ORDER BY SUM(income) DESC) FROM staff GROUP BY sex
+
+
+
+
+
+
+---
+
+

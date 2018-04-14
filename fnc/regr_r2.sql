@@ -1,0 +1,10 @@
+//REGR_R2
+//REGR_SLOPE
+//REGER_INTERCEPT
+
+SELECT REGR_R2(income,age) FORM staff
+
+
+
+---
+
