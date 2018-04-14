@@ -1,0 +1,20 @@
+//CONVERT
+//CAST
+//TO_CHAR
+//TO_NUMBER
+//mysql
+
+
+SELECT CONVERT(varchar,0.245)
+SELECT CONVERT(datetime,36357)
+SELECT CONVERT(int, '1245')
+SELECT CONVERT(datetime,'99/01/24')
+SELECT d,CONVERT(int,d) FROM foo
+SELECT d,CONVERT(varchar,d,11) FROM foo
+
+
+
+----
+
+
+
