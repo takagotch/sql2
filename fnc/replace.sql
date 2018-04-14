@@ -1,7 +1,12 @@
+//REPLACE
 //TRANSLATE
+//
 
 SELECT a,b,c REPLACE(a,b,c) FROM foo
 
+SELECT REGEXP_REPLACE('01902345678', '([0-9]{4})([0-9]{4})', '(\1) \2-\3') FROM DUAL
+
+---
 
 
 

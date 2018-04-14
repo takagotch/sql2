@@ -59,11 +59,11 @@ UPPER
 ADD_MONTH
 CURRENT_DATE
 CURRENT_TIMESTAMP
-DATE_ADD,ADDDATE
-DATE_FORMAT
-DATE_PART
-DATE_SUB, SUBDATE
-DATE_TRUNC
+DATE_ADD,ADDDATE          //mysql
+DATE_FORMAT               //mysql
+DATE_PART                 //psgl
+DATE_SUB, SUBDATE         //mysql
+DATE_TRUNC                //psgl
 DATEADD
 DATEDIFF
 DATENAME
@@ -71,9 +71,9 @@ DATEPART
 DATE, DATETIME, TIME
 DAY
 DAYNAME
-DAYOFMONTH
-DAYOFWEEK
-DAYOFFYEAR
+DAYOFMONTH               //mysql
+DAYOFWEEK                //mysql
+DAYOFFYEAR               //mysql
 EOMONTH
 EXTRACT
 FORMAT
@@ -89,9 +89,9 @@ QUATER
 SECOND
 STRFTIME
 SYSDATE
-TIME_FORMAT
-WEEK
-WEEKDAY
+TIME_FORMAT              //mysql
+WEEK                     //mysql
+WEEKDAY                  //mysql
 YEAR
 
 ### 

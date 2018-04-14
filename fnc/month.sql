@@ -1,0 +1,13 @@
+//MONTH
+//DAY
+//MONTHNAME
+//YEAR
+
+SELECT a,MONTH(a) FROM foo
+
+
+
+---
+
+
+

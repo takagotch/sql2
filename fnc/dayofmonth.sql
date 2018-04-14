@@ -1,0 +1,11 @@
+//DAYOFMONTH
+//DRY
+//MONTH
+//YEAR
+//mysql
+
+SELCT a,DAYOFMONTH(a) FROM foo
+
+---
+
+

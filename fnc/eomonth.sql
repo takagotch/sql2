@@ -1,0 +1,10 @@
+//EOMONTH
+//LAST_DAY
+//sql
+
+SELECT a, EOMONTH(a) FROM foo
+
+SELECT EOMONTH(GETDATE(), 1)
+
+----
+

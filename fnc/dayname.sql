@@ -1,0 +1,9 @@
+//DAYNAME //mysql
+//MONTH
+//WEEKDAY
+//YEAR
+
+SELECT a,DAYNAME(a) FROM foo
+
+
+

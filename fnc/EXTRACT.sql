@@ -1,3 +1,4 @@
+//EXTRACT
 //DATEPART
 
 SELECT a,EXTRACT(day FROM a) FROM foo
@@ -24,5 +25,35 @@ SECOND
 MICROSECOND
 
 //psgl
+millennium
+century
+decade
+year
+day
+quater
+month
+dow
+isodow
+week
+doy
+epoch
+hour
+minute
+second
+milliseconds
+microseconds
+timezone
+timezone_hour
+timezone_minute
 
+//oracle
+YEAR
+MONTH
+HOUR
+MINUTE
+SECOND
+TIMEZONE_HOUR
+TIMEZONE_MINUTE
+TIMEZONE_REGON
+TIMEZONE_ABBR
 

@@ -1,0 +1,10 @@
+//DAYOFYEAR
+//DAY
+//DAYOFMONTH
+
+SELECT a,DAYOFYEAR(a) FROM foo
+
+
+---
+
+

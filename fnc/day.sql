@@ -1,0 +1,13 @@
+//DAY
+//DAYOFMONTH
+//MONTH
+//YEAR
+
+//DAY YEAR MONTH
+SELECT a,DAY(a) FROM foo
+
+
+---
+
+
+

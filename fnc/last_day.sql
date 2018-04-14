@@ -1,0 +1,13 @@
+//LAST_DAY
+//EOMONTH
+//mysql
+
+
+SELECT a,LAST_DAY(a) FROM foo
+
+SELECT LAST_DAY(SYSDATE) - SYSDATE FROM DUAL
+
+---
+
+
+

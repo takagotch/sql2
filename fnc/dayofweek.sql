@@ -1,0 +1,10 @@
+//DAYOFWEEK
+//DAYNAME
+
+SELECT a, DAYOFWEEK(a) FROM foo
+
+---
+
+
+
+

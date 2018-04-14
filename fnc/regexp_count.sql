@@ -1,0 +1,10 @@
+//REGEXP_COUNT
+//REGEXP
+//REGEXP_LIKE
+//oracle
+
+SELECT REGEXP_COUNT('tky', '[tk]') FROM DUAL
+
+
+SELECT REGEXP_COUNT('takagotch', '. ') FROM DUAL
+

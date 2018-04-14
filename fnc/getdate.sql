@@ -1,0 +1,18 @@
+//GETDATE
+//CURRENT_TIMESTAMP
+//NOW
+//SYSDATE
+//sql
+
+SELECT GETDATE()
+
+INSERT INTO foo VALUES(GETDATE())
+
+
+---
+
+
+
+
+
+

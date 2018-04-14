@@ -1,0 +1,10 @@
+//WEEKDAY
+//DAYNAME
+//DAYOFWEEK
+//mysql
+
+SELECT a,WEEKDAY(a) FROM foo
+
+---
+
+

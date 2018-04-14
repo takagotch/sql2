@@ -1,0 +1,9 @@
+//MONTHS_BETWEEN
+//ADD_MONTHS
+//oracle
+
+SELECT a,bMONTHS_BETWEEN(a,b) FROM foo
+
+
+---
+

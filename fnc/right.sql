@@ -1,6 +1,9 @@
-//LEFT, SUBSTRING
+//RIGHT
+//LEFT
+//SUBSTRING
+
 
 SELECT a,b,RIGHT(a,b) FROM foo
-
+SELECT a,b,RIGHT(a,b) FROM foo
 
 

@@ -1,0 +1,8 @@
+//SECOND
+//HOUR
+//MINUTE
+
+SELECT a,SECOND(a) FROM foo
+
+---
+

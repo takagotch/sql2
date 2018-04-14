@@ -1,3 +1,4 @@
+//LPAD
 //RPAD
 
 SELECT a, LPAD(a,10,'*') FROM foo
