@@ -33,6 +33,37 @@ BEGIN
   RETURN;
 END;
 
-//sql
-//
+//sql RETURNS TABLE
+CREATE FUNCTION table_func (@argment int) RETURNS
+  TABLE AS
+  RETURN (SELECT * FROM foo WHERE a=@argment)
+//table variable
+CREATE FUNCTION table_func (@argment int)
+  RETURN @ret TABLE (a int, b varchar(20)) AS
+BEGIN
+  INSERT @ret SELECT * FROM foo WHERE a=@argment
+  INSERT @ret SELECT * FROM bar WHERE a=@argment
+  RETURN
+END
+
+//table_func
+SELECT * FROM table_func(1)
+
+//db2
+CREATE FUNCTION table_func(argment INTEGER)
+  RETURNS TABLE (a INTEGER, b VARCHAR(20))
+LANGUAGE SQL
+RETURN SELECT a, b FROM foo WHERE a = argment
+
+//table_func FROM
+SELECT * FROM TABLE(table_func(1))
+
+
+
+
+
+
+---
+
+
 

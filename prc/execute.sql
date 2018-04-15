@@ -1,5 +1,7 @@
-//
-//oracle
+//EXECUTE
+//QUOTENAME
+
+//oracle  drop_table.sql
 CREATE OR REPLACE PROCEDURE p_drop_table IS
   CURSOR cursor_name IS SELECT table_name FROM drop_table;
   table_name VARCHAR2(128);
@@ -16,7 +18,7 @@ BEGIN
 END;
 
 
-
+//EXECUTE IMMEDIATE :1 p_create_table
 CREATE PROCEDURE p_create_table(table_name VARCHAR2) IS
 BEGIN
   EXECUTE IMMEDIATE 'CREATE TABLE' || table_name
@@ -26,7 +28,7 @@ END;
 
 
 
-//sql
+//sql EXECUTE EXEC p_create_table
 CREATE PROCEDURE p_create_table(@table_name VARCHAR(128))
 BEGIN
   EXEC ('CREATE TABLE' + @table_name + '(a INT)')
@@ -35,7 +37,7 @@ END
 
 
 
-//psgl
+//psgl EXECUTE INTO f_create_table QUOTENAME
 CREATE FUNCTION f_create_table(table_name VARCHAR)
   RETURNS void AS $$
 BEGIN
@@ -46,4 +48,6 @@ $$ LANGUAGE 'plpgsql';
 
 
 
+
+---
 
