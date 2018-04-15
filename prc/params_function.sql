@@ -48,11 +48,20 @@ END
 
 SELECT dbo.f_foo(DEFAULT,2)
 
+
+
 //mysql LANGUAGE SQL
 CREATE FUNCTION f_foo(a INTEGER,b INTEGER) RETURNS
   INTEGER LANGUAGE SQL RETURNS a * b;
 
 SELECT f_foo(1,2) FROM DUMMY
+
+
+
+
+
+
+
 
 //psgl $1,$2
 CREATE FUNCTION f_foo(INTEGER, INTEGER) RETURNS INTEGER
@@ -78,10 +87,6 @@ END;
 $$ LANGUAGE 'plpgsql';
 
 SELECT * FROM f_foo(1);
-
-
-
-
 
 
 
