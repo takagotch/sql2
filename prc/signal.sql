@@ -1,5 +1,7 @@
+//SIGNAL
 //mysql
 
+//SET MESSAGE_TEXT SIGNAL '70001' condition SQLSTATE params(IN a INTEGER) a = 0 
 CREATE PROCEDURE p_foo(IN a INTEGER) LANGUAGE SQL
 BEGIN
   IF a = 0 THEN
@@ -8,5 +10,7 @@ BEGIN
   END IF;
 END
 
+
+---
 
 
