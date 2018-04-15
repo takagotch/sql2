@@ -1,6 +1,7 @@
+//CONTINUE
 //WHILE
 
-//sql
+//sql CONTINUE variable i 
 DECLARE @i int
 SET @i = 0
 WHILE @i < 200
@@ -11,7 +12,7 @@ BEGIN
   PRINT @i
 END
 
-//oracle
+//oracle variable i CONTINUE
 DECLARE
 BEGIN
   FOR i IN 0..100 LOOP
@@ -19,5 +20,11 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('i=' || i);
   END LOOP;
 END;
+
+
+
+
+
+---
 
 

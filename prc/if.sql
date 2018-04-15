@@ -1,17 +1,18 @@
-//oracle
+//IF
+//oracle result NULL 'Found' 'Not Found'
 DECLARE
   result NUMBER;
   val NUMBER := 1;
 BEGIN
   SELECT a INTO result FROM bar WHERE a = val;
   IF result IS NOT NULL THEN
-    DBMS_OUTPUT.PUT_LINE('FOUND');
+    DBMS_OUTPUT.PUT_LINE('Found');
   ELSE
     DBMS_OUTPUT.PUT_LINE('Not Found');
   END IF;
 END;
 
-
+//ELSIF params a 'zero' 'not zero and one'
 CREATE FUNCTION test_ifthen_elseif(a IN INTEGER)
   RETURN VARCHAR2 IS
 BEGIN
@@ -24,9 +25,17 @@ BEGIN
   END IF;
 END
 
-//sql
+//sql ELSE
+DECLARE @result int
+DECLARE @val int
+SET @val = 1
+SELECT @result = a FROM bar WHERE a = @val
+IF @result IS NOT NULL
+  print('Found')
+ELSE
+  print('Not Found')
 
-//mysql
+//mysql ELSEIF END IF THEN ELSE INSERT 
 CREATE PROCEDURE test_ifthen() LANGUAGE SQL
 BEGIN
   DECLARE res INTEGER;
@@ -39,7 +48,7 @@ BEGIN
   END IF;
 END
 
-
+//argument = 0 PROCEDURE
 CREATE PROCEDURE test_ifthen_elseif(IN a INTEGER)
   LANGUAGE SQL
 BEGIN
@@ -52,7 +61,7 @@ BEGIN
   END IF;
 END
 
-//psgl
+//psgl IF THEN ELSIF ELSE END IF argument 0 'zero' 'not zero'
 CREATE FUNCTION test_ifthen(INTEGER) RETURNS VARCHAR
   AS $$
 BEGIN
@@ -64,7 +73,7 @@ BEGIN
 END;
 $$ LANGUAGE 'plpgsql';
 
-
+//argument 0 ELSIF
 CREATE FUNCTION test_ifthen_elseif(INTEGER)
   RETURN VARCHAR AS $$
 BEGIN

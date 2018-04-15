@@ -1,9 +1,20 @@
+//EXIT
 //LOOP
-//GOTO
+//GOTO LABEL
 
-//oracle
+//oracle EXIT WHEN
+DECLARE
+  i NUMBER;
+BEGIN
+  i := 0;
+  LOOP
+    i := i + 1;
+    EXIT WHEN i >= 10;
+    DBMS_OUTPUT.PUT_LINE('i=' || i);
+  END LOOP;
+END;
 
-//psgl
+//psgl 
 CREATE FUNCTION test_label() RETURNS VARCHAR AS $$
 DECLARE
   i INTEGER;

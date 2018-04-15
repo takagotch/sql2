@@ -1,5 +1,8 @@
+//ITERATE  //CONTINUE
 //LOOP
+//mysql
 
+//ITERATE variable i  
 CREATE PROCEDURE test_iterate() LANGUAGE SQL
 BEGIN
   DECLARE i INTEGER;

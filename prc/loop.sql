@@ -1,3 +1,4 @@
+//LOOP
 //FOR
 //EXIT
 //oracle
@@ -13,7 +14,7 @@ BEGIN
 END;
 
 
-//mysql
+//mysql LOOP LEAVE
 CREATE PROCEDURE test_loop() LANGUAGE SQL
 BEGIN
   DECLARE i INTEGER;
@@ -27,7 +28,7 @@ BEGIN
 END
 
 
-//psgl
+//psgl LOOP EXIT
 CREATE FUNCTION test_loop() RETURNS INTEGER AS $$
 DECLARE
   i INTEGER;
@@ -44,4 +45,8 @@ $$ LANGUAGE 'plpgsql'
 
 
 
+
+
+
+-----
 

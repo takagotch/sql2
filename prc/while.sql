@@ -1,7 +1,8 @@
+//WHILE
 //BREAK
 //LEAVE
 
-//oracle
+//oracle WHILE END LOOP EXIT PUT_LINE
 DECLARE
   i NUMBER;
 BEGIN
@@ -12,7 +13,7 @@ BEGIN
   END LOOP;
 END;
 
-//sql
+//sql WHILE BREAK print
 DECLARE @i int
 SET @i = 0
 WHILE @i < 100
@@ -21,7 +22,7 @@ BEGIN
   PRINT @i
 END
 
-//mysql
+//mysql WHILE DO END WHILE LEAVE 
 CREATE PROCEDURE test_while() LANGUAGE SQL
 BEGIN
   DECLARE i INTEGER;
@@ -30,10 +31,9 @@ BEGIN
     SET i = i + 1;
   END WHILE;
 END
-END
 
 
-//psgl
+//psgl WHILE RAISE NOTICE
 CREATE FUNCTION test_while() RETURNS INTEGER AS $$
 DECLARE
   i INTEGER;
@@ -47,4 +47,6 @@ BEGIN
 END;
 $$ LANGUAGE 'plpgsql'
 
+
+---
 

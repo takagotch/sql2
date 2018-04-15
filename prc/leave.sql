@@ -1,5 +1,7 @@
+//LEAVE
 //ITERATE
 
+//LEAVE LAVELname: variable i
 CREATE PROCEDURE test_leave() LANGUAGE SQL
 BEGIN
   DECLARE i INTEGER;
@@ -11,6 +13,13 @@ BEGIN
     END IF;
   END LOOP;
 END
+
+
+
+
+
+
+----
 
 
 
