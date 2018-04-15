@@ -28,11 +28,13 @@ SELECT sex,SUM(age),SUM(SUM(age)) OVER(ORDER BY SUM(age)
   ROWS UNBOUNDED PRECEDING) FROM staff GROUP BY sex
   ORDER BY SUM(age)
 
-//AVG
-SELECT AVG(int) OVER(ORDER BY DATE ROWS 4 PRECEDING)
+//AVG  
+SELECT AVG(value) OVER(ORDER BY DATE ROWS 4 PRECEDING)
   FROM price
 
-
+//
+//value 値
+//attributes 属性
 
 
 

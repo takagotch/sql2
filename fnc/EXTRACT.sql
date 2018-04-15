@@ -57,3 +57,21 @@ TIMEZONE_MINUTE
 TIMEZONE_REGON
 TIMEZONE_ABBR
 
+
+//EXTRACT XML
+//nodes
+//oracle XPath /root/foo/bar
+SELECT EXTRACT(c, '/root/foo/bar')
+  FROM xml_sample
+//sql XPath /root[1]/foo[1]/bar[1]
+SELECT T.c.query('.') FROM xml_sample
+  CROSS APPLY c.nodes('/root[1]/foo[1]/bar[1]') AS T(c)
+
+
+
+
+
+
+----
+
+
