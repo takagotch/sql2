@@ -1,4 +1,9 @@
+//db2
+//EXPORT
+//LOBS TO LOBFILE
+//MESSAGES HIERARCHY
 
 EXPORT TO foo.txt OF DEL SELECT * FROM foo
 
+---
 
