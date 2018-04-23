@@ -1,4 +1,5 @@
-//
+//oracle
+//keyword=value, keyword=(value,value...)
 
 exp system/manager full=y
 
@@ -10,4 +11,5 @@ exp scott/tiger@peta tables(foo)
 
 exp scott/tiger owner=(scott)
 
+---
 

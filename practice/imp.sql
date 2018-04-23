@@ -1,4 +1,5 @@
-//
+//oracle
+//keyword=value, keyword=(value,value...)
 imp system/manager full=y
 
 imp scott/tiger tables=(foo,bar)
