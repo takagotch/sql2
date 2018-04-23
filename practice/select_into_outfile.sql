@@ -1,3 +1,7 @@
+//mysql
+//INTO OUTFILE
+
+// /tmp/export.txt
 
 SELECT * INTO OUTFILE '/tmp/export.txt'
   FIELDS TERMINATED BY ','
