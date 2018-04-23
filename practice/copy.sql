@@ -1,6 +1,10 @@
+//psgl
+//COPY
+//COPY BINARY,WITH OID,USING DELIMITERS,WITH NULL AS
 
 COPY foo TO '/tmp/foo.txt' USING DELIMITERS ','
 
 COPY foo FROM '/tmp/foo.txt' USING DELIMITERS ','
 
+---
 
